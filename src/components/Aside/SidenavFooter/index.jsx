@@ -69,7 +69,6 @@ function SidenavFooter() {
             <div className="footerCont">
               <div className="footerCont1">
                 <span className="frame"><img src={footerlogo} alt=""/></span>
-                <p>The first diamond marketplace for crypto collectibles.</p>
               </div>
               <div className="footerCont2">
                 <p>Marketplace</p>
