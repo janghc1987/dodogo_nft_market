@@ -280,7 +280,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
               </ol>
             </div>
           </li>
-          <li><a href="#" style={ createAddress.indexOf(account) >= 0  ? { display:'' }:{display:'none'}}  onClick={createItem}>Create</a></li>
+          <li><a href="#"  onClick={createItem}>Create</a></li>
           <li style={{display:'none'}}><a href="#">Drop</a></li>
           <li>
             <a href="#" className="off" id='guidesDiv' onClick={guides}>Guides<i className="fas fa-caret-down"></i></a>
@@ -369,7 +369,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
           <li><a href={Pdf_ko}>Guides(ko)</a></li>
           <li><a href={Pdf_en}>Guides(en)</a></li>
           <li><a href="#none" onClick={()=>{window.open('https://www.tvs.gallery/contact');mobmnuPop();}}>Contact Us</a></li>
-          <li><a href="#none"  style={ createAddress.indexOf(account) >= 0  ? { display:'' }:{display:'none'}} onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
+          <li><a href="#none" onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
         </ul>
       </div>
     </div>
@@ -394,7 +394,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
 							<li><a href="#" onClick={() => {goAuction(3);mobmnuPop();}}>Digital Art</a></li>
 						</ol>
 					</div></li>
-				<li><a href="#"  style={ createAddress.indexOf(account) >= 0  ? { display:'' }:{display:'none'}} onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
+				<li><a href="#"  onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
 				<li><a href="#" onClick={mobileGuides} id="mobileGuides" className="off">Guides<i
 						className="fas fa-caret-right"></i></a>
 					<div className="subMnu">

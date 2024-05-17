@@ -697,7 +697,7 @@ const onClickSettleAuction = async () => {
 				clsePop();
 				$(".btnArea2").hide();
 				$(".endauction").hide();
-				mint();
+				// mint();
 			}else{
 				alert(jsonData.message);
 			}
