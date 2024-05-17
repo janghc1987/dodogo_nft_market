@@ -851,7 +851,7 @@ const onBuyNow = async () => {
   
 	useEffect(() => {
 
-		handleTitle('TVS-NFT');
+		handleTitle('DODOGO-NFT');
 		getMainWidth();
 		// const now = new Date();
 	   

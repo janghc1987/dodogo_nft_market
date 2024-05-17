@@ -9,7 +9,7 @@ import ImgComingSoon from '../../assets/img/Pando_NFT_Banner_comingsoon.png';
 const GamesContainer = () => {
   useEffect(() => {
     // handleTitle('Games');
-    handleTitle('TVS-NFT | P2P NFT Marketplace');
+    handleTitle('DODOGO-NFT | P2P NFT Marketplace');
     getMainWidth();
   }, []);
 

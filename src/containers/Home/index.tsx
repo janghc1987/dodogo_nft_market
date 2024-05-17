@@ -47,7 +47,7 @@ const HomeContainer = () => {
 	};
 
   useEffect(() => {
-    handleTitle('TVS-NFT');
+    handleTitle('DODOGO-NFT');
     getMainWidth();
   }, []);
   

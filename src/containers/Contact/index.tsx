@@ -119,7 +119,7 @@ const ContactContainer = () => {
 
   useEffect(() => {
     // handleTitle('Contact');
-    handleTitle('TVS-NFT');
+    handleTitle('DODOGO-NFT');
   }, []);
 
   return (

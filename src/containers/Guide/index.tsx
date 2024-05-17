@@ -18,7 +18,7 @@ const GuideContainer = () => {
 
   useEffect(() => {
     // handleTitle('User Guide');
-    handleTitle('TVS-NFT');
+    handleTitle('DODOGO-NFT');
     getMainWidth();
   }, []);
 
