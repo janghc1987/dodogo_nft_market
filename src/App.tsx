@@ -41,7 +41,7 @@ const App = () => {
         <meta name="robots" content="index, follow"/>
         <meta property="og:type" content="website"/>
         <meta property="og:image" content="../assets/img/meta-img.png"/>
-        <meta property="og:url" content="https://tvs.land"/>
+        <meta property="og:url" content="https://dodogocoin.net"/>
         <meta property="og:image:alt" content="DODOGO-NFT"/>
         <meta name="twitter:title" content="DODOGO-NFT"/>
         <meta name="twitter:description" content="Create, sell, and auction NFTs, digital items, and crypto collectibles. Explore new items everyday."/>

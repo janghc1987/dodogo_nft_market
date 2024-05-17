@@ -281,17 +281,17 @@ const TokenSwapContainer = () => {
 			<div className="listArea sort1">
 				<ul>
 					<div style={{height:'200px' ,width:'100%'}}>
-						<div style={{height:'100px' ,width:'100%'}}>TVS 계좌 {account}</div>
-						<div style={{height:'100px' ,width:'100%'}}>TVS 보유 수량 {tvsPoint}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DDP 계좌 {account}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DDP 보유 수량 {tvsPoint}</div>
 					</div>
 					<div style={{height:'100px' ,width:'100%'}}>
-						<div style={{height:'100px' ,width:'100%'}}>TVP 수량 {tvpPoint}</div>
+						<div style={{height:'100px' ,width:'100%'}}>DDP 수량 {tvpPoint}</div>
 					</div>
 					<div style={{backgroundColor:'red'}} >
-						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM TVS TO TVP)</a>
+						<a href="#" onClick={exchange} className="on">Token Swap Request(FROM DDS TO DDP)</a>
 					</div>
 					<div style={{backgroundColor:'blue'}} >
-						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM TVP TO TVS)</a>
+						<a href="#" onClick={transferToken} className="on">Token Swap Request(FROM DDP TO DDS)</a>
 					</div>
 				</ul>
 			</div>
@@ -335,17 +335,17 @@ const TokenSwapContainer = () => {
 					src={btn_close} onClick={clsePop} alt="닫기"/></a>
 			</p>
 			<div className="bidArea">
-				<p>FROM : TVS</p>
+				<p>FROM : DDS</p>
 				<div className="inputArea">
 					<input type="text" id="tvsPoint" />
-					<span>TVS</span>
+					<span>DDS</span>
 				</div>
 			</div>
 			<div className="bidArea">
-				<p>TO : TVP</p>
+				<p>TO : DDP</p>
 				<div className="inputArea">
 					<input type="text" id="tvpPoint" />
-					<span>TVP</span>
+					<span>DDP</span>
 				</div>
 				<span className="err" style={{display:'none'}}>Must be higher than the highest bid</span>
 			</div>

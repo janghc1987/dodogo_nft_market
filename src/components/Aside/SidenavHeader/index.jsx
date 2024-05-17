@@ -282,7 +282,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
           </li>
           <li><a href="#"  onClick={createItem}>Create</a></li>
           <li style={{display:'none'}}><a href="#">Drop</a></li>
-          <li>
+          <li style={{display:'none'}}>
             <a href="#" className="off" id='guidesDiv' onClick={guides}>Guides<i className="fas fa-caret-down"></i></a>
             <div className="subMnu">
               <ol>
@@ -291,7 +291,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
               </ol>
             </div>
           </li>
-          <li><a href="#" onClick={()=>{window.open('https://www.tvs.gallery/contact')}}>Contact Us</a></li>
+          <li><a href="#" onClick={()=>{window.open('https://dodogocoin.net/')}}>Contact Us</a></li>
         </ul>
       </nav>
       <div className="connectBtns">
@@ -307,7 +307,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
                         <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/mycollection')}}><span className="frame type1"><img src={userOn} alt=""/></span>Profile</a>
                       </li>
                       <li>
-                        <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/tvpSwap/Y')}}><span className="frame type1"><img src={TVsOn} alt=""/></span>TVP Swap</a>
+                        <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); history.push('/tvpSwap/Y')}}><span className="frame type1"><img src={TVsOn} alt=""/></span>DDP Swap</a>
                       </li>
                       <li>
                         <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}} ><span className="frame type1"><img src={logoutOn} alt=""/></span>Disconnect</a>
@@ -346,7 +346,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
                     <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/mycollection')}}><span className="frame"><img src={userOn} alt=""/></span>Profile</a>
                   </li>
                   <li>
-                    <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/tvpSwap/Y')}}><span className="frame"><img src={TVsOn} alt=""/></span>TVP Swap</a>
+                    <a href="#" onClick={event => {event.preventDefault();  mobmnuPop(); history.push('/tvpSwap/Y')}}><span className="frame"><img src={TVsOn} alt=""/></span>DDP Swap</a>
                   </li>
                   <li>
                     <a href="#" onClick={event => {event.preventDefault(); $('.infoCont').hide(); deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}}><span className="frame"><img src={logoutOn} alt=""/></span>Disconnect</a>
@@ -368,7 +368,7 @@ function SidenavHeader({ AsidelogoCt, hideShowSidebar }) {
           <li><a href="#none" onClick={() => {goAuction(0);mobmnuPop();}}>Explore</a></li>
           <li><a href={Pdf_ko}>Guides(ko)</a></li>
           <li><a href={Pdf_en}>Guides(en)</a></li>
-          <li><a href="#none" onClick={()=>{window.open('https://www.tvs.gallery/contact');mobmnuPop();}}>Contact Us</a></li>
+          <li><a href="#none" onClick={()=>{window.open('https://dodogocoin.net');mobmnuPop();}}>Contact Us</a></li>
           <li><a href="#none" onClick={() => {createItem();mobmnuPop();}}>Create</a></li>
         </ul>
       </div>
