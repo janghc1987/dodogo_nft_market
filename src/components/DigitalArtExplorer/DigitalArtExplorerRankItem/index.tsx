@@ -21,8 +21,8 @@ function LiveAuctionsItem(props: IAuction) {
               <p>Total</p>
             </li>
             <li>
-              <p><span>{props.currentPrice}</span> TVP</p>
-              <p><span>{props.totalBidPrice}</span> TVP</p>
+              <p><span>{props.currentPrice}</span> DDP</p>
+              <p><span>{props.totalBidPrice}</span> DDP</p>
             </li>
             <li>
               <p style={{display:'none'}}>{props.highestBidder}</p>

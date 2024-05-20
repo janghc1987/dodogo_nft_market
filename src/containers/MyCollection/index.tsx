@@ -924,7 +924,7 @@ const ProfileContainer = () => {
 		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//DDP -> DDS
 			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','DDP'));
 			$('#availToken>span>span>em').text(tvpAmount);
-			$('#fromToken').text('TVP');
+			$('#fromToken').text('DDP');
 			$('#toToken').text('DDS');
 			$('#toTokenQnt').text('DDS Quantity');
 			$('#toTokenAmt').val(0);
@@ -1224,7 +1224,7 @@ const ProfileContainer = () => {
 		<div className="inputSec">
 			<ul>
 			<li>
-				<p className="subTit" id='availToken'>Available Quantity <span><span><em>{tvpAmount}</em></span></span><span style={{marginRight:10}}>TVP</span></p>
+				<p className="subTit" id='availToken'>Available Quantity <span><span><em>{tvpAmount}</em></span></span><span style={{marginRight:10}}>DDP</span></p>
 			</li>
 			<li>
 				<p className="subTit">Token Quantity</p>

@@ -966,11 +966,11 @@ const onBuyNow = async () => {
 					<div className="priceInfo">
 						<div className="contbox">
 						<p>Current Price</p>
-						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.currentPrice}</em>TVP</span></p>
+						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.currentPrice}</em>DDP</span></p>
 						</div>
 						<div className="contbox">
 						<p>Buy Now</p>
-						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.buyNowPrice}</em>TVP</span></p>
+						<p><span className="frame"><img src={TVsOn} alt=""/></span><span><em>{auction?.buyNowPrice}</em>DDP</span></p>
 						</div>
 					</div>
 
@@ -1253,7 +1253,7 @@ const onBuyNow = async () => {
 								{auction && auction?.highestBidder && auction?.highestBidder.substr(auction?.highestBidder.length - 7)}
 								</span>
 						</p>
-						<p>You will receive <span><em>{Number((auction?.currentPrice*0.975).toFixed(0))}</em>TVP</span></p>
+						<p>You will receive <span><em>{Number((auction?.currentPrice*0.975).toFixed(0))}</em>DDP</span></p>
 					</div>
 				</div>
 				<div className="btnArea">

@@ -103,11 +103,11 @@ function Card(auction: IAuction) {
           <p>PRICE<span>
                       <em>
                         {auction.buyNowPrice}
-                      </em>TVP
+                      </em>DDP
                   </span>
           </p>
           <p>HIGHEST<span><em>{auction.currentPrice}
-                      </em>TVP
+                      </em>DDP
                   </span>
           </p>
         </div>
