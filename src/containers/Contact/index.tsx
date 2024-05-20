@@ -94,7 +94,7 @@ const ContactContainer = () => {
     }
 
     if($(".btnArea>a").hasClass('on')){
-      var param = 'mailto:admin@tvsglobal.io?subject='+inputName+"&body="+contactTxt + "%0D%0A%0D%0A%0D%0APlease return '"+inputEmail+"'";
+      var param = 'mailto:admin@dodogocoin.net?subject='+inputName+"&body="+contactTxt + "%0D%0A%0D%0A%0D%0APlease return '"+inputEmail+"'";
 
       window.open(param);  
     }else{

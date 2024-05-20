@@ -651,7 +651,7 @@ const ProfileContainer = () => {
 			let availToken = new BigNumber($('#availToken>span>span>em').text());
 
 			if(Number(fromTokenAmt) > Number(availToken)){
-				alert('You do not have enough TVP in your possession.')
+				alert('You do not have enough DDP in your possession.')
 				return;
 			}
 
@@ -659,7 +659,7 @@ const ProfileContainer = () => {
 				"address": walletAccount,
 				'tvpToken' : $('#fromTokenAmt').val(),
 				'tvsToken' : $('#toTokenAmt').val(),
-				'tokenName' : 'TVS',
+				'tokenName' : 'DDS',
 				'amount' : web3.utils.toWei($('#fromTokenAmt').val(),	'ether')
 			});
 	
@@ -708,7 +708,7 @@ const ProfileContainer = () => {
 		let availToken = new BigNumber($('#availToken>span>span>em').text());
 
 		 if(Number(fromTokenAmt) > Number(availToken)){
-		 	alert('You do not have enough TVS in your possession.')
+		 	alert('You do not have enough DDS in your possession.')
 		 	return;
 		 }
 		var transferToken = web3.utils.toWei($('#fromTokenAmt').val(),	'ether');
@@ -806,10 +806,10 @@ const ProfileContainer = () => {
 			  function (err, result) {
 				
 				if(JSON.stringify(result.result) === undefined){
-					alert('TVP 스왑 오류')
+					alert('DDP 스왑 오류')
 				}else{
 					console.log(JSON.stringify(result.result));
-					alert("TVP 스왑 신청이 완료되었습니다.")
+					alert("DDP 스왑 신청이 완료되었습니다.")
 				}
 		
 			  });
@@ -872,10 +872,10 @@ const ProfileContainer = () => {
 			  function (err, result) {
 				
 				if(JSON.stringify(result.result) === undefined){
-					alert('TVP 스왑 오류')
+					alert('DDP 스왑 오류')
 				}else{
 					console.log(JSON.stringify(result.result));
-					alert("TVP 스왑 신청이 완료되었습니다.")
+					alert("DDP 스왑 신청이 완료되었습니다.")
 				}
 		
 			  });
@@ -887,24 +887,24 @@ const ProfileContainer = () => {
 	
 	const chgSwapToken = () =>{
 
-		if($('#availToken>span').eq(1).text().indexOf('TVP') >= 0 ){//TVS -> TVP
-			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('TVP','TVS'));
+		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){//DDS -> DDP
+			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('DDP','DDS'));
 			$('#availToken>span>span>em').text(tvsAmount);
-			$('#fromToken').text('TVS');
-			$('#toToken').text('TVP');
-			$('#toTokenQnt').text('TVP Quantity');
+			$('#fromToken').text('DDS');
+			$('#toToken').text('DDP');
+			$('#toTokenQnt').text('DDP Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','13px');
 			$('#fromTokenAmt').css('width','84%');
-			setFromToken('TVS');
+			setFromToken('DDS');
 			
-		}else if($('#availToken>span').eq(1).text().indexOf('TVS') >= 0){//ETH -> TVP
-			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('TVS','ETH'));
+		}else if($('#availToken>span').eq(1).text().indexOf('DDS') >= 0){//ETH -> TVP
+			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('DDS','ETH'));
 			$('#availToken>span>span>em').text(ethAmount);
 			$('#fromToken').text('ETH');
-			$('#toToken').text('TVP');
-			$('#toTokenQnt').text('TVP Quantity');
+			$('#toToken').text('DDP');
+			$('#toTokenQnt').text('DDP Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','13px');
@@ -914,34 +914,34 @@ const ProfileContainer = () => {
 			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('ETH','MATIC'));
 			$('#availToken>span>span>em').text(polygonAmount);
 			$('#fromToken').text('MATIC');
-			$('#toToken').text('TVP');
-			$('#toTokenQnt').text('TVP Quantity');
+			$('#toToken').text('DDP');
+			$('#toTokenQnt').text('DDP Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','8px');
 			$('#fromTokenAmt').css('width','80%');
 			setFromToken('MATIC');
-		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//TVP -> TVS
-			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','TVP'));
+		}else if($('#availToken>span').eq(1).text().indexOf('MATIC') >= 0){//DDP -> DDS
+			$('#availToken>span').eq(1).html($('#availToken>span').eq(1).html().replace('MATIC','DDP'));
 			$('#availToken>span>span>em').text(tvpAmount);
 			$('#fromToken').text('TVP');
-			$('#toToken').text('TVS');
-			$('#toTokenQnt').text('TVS Quantity');
+			$('#toToken').text('DDS');
+			$('#toTokenQnt').text('DDS Quantity');
 			$('#toTokenAmt').val(0);
 			$('#fromTokenAmt').val(0);
 			$('.exchgPop>.exchgCont>.inputSec>ul>li>p.subTit>span').css('font-size','13px');
 			$('#fromTokenAmt').css('width','84%');
-			setFromToken('TVS');
+			setFromToken('DDS');
 		}
 
 	}
 
 	const tokenSwapCall = () =>{
-		if($('#availToken>span').eq(1).text().indexOf('TVP') >= 0 ){
+		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){
 			// 메타마스크 연동 없이 컨트롤 가능한 회사지갑에서 바로 송금
 			transFromTVP();
-		}else if($('#availToken>span').eq(1).text().indexOf('TVS') >= 0 ){
-			// 메타마스크 통해 토큰스왑(TVS) 신청
+		}else if($('#availToken>span').eq(1).text().indexOf('DDS') >= 0 ){
+			// 메타마스크 통해 토큰스왑(DDS) 신청
 			transFromTVS();
 		}else if($('#availToken>span').eq(1).text().indexOf('ETH') >= 0 ){
 			// 메타마스크 통해 토큰스왑(ETH) 신청
@@ -989,9 +989,9 @@ const ProfileContainer = () => {
 
 		var fromTokenAmt = $('#fromTokenAmt').val() !== '' ? $('#fromTokenAmt').val():0;
 
-		if($('#availToken>span').eq(1).text().indexOf('TVP') >= 0 ){
+		if($('#availToken>span').eq(1).text().indexOf('DDP') >= 0 ){
 			$('#toTokenAmt').val(fromTokenAmt);
-		}else if($('#availToken>span').eq(1).text().indexOf('TVS') >= 0){
+		}else if($('#availToken>span').eq(1).text().indexOf('DDS') >= 0){
 			$('#toTokenAmt').val(fromTokenAmt);
 		}else if($('#availToken>span').eq(1).text().indexOf('ETH') >= 0){
 			$('#toTokenAmt').val(((ethPrice*fromTokenAmt)/dollorPrice).toFixed(0));
@@ -1052,7 +1052,7 @@ const ProfileContainer = () => {
 						<a href="#"><span className="frame type1"><img src={userOn} alt=""/></span><span className="frame type2"><img src={userOff} alt=""/></span>Profile</a>
 					</li>
 					<li>
-						<a href="#"><span className="frame type1"><img src={TVsOn} alt=""/></span><span className="frame type2"><img src={TVsOff} alt=""/></span>TVP Swap</a>
+						<a href="#"><span className="frame type1"><img src={TVsOn} alt=""/></span><span className="frame type2"><img src={TVsOff} alt=""/></span>DDP Swap</a>
 					</li>
 					<li>
 						<a href="#" onClick={event => {deactivate(); window.localStorage.removeItem('wallet');history.replace('/');}}><span className="frame type1"><img src={logoutOn} alt=""/></span><span className="frame type2"><img src={logoutOff} alt=""/></span>Disconnect</a>
@@ -1159,13 +1159,13 @@ const ProfileContainer = () => {
 									<p>ETH Quantity <span><em>{ethAmount}</em>ETH</span></p>
 								</li>
 								<li>
-									<p>TVS Quantity <span><em>{tvsAmount}</em>TVS</span></p>
+									<p>DDS Quantity <span><em>{tvsAmount}</em>DDS</span></p>
 								</li>
 								<li>
 									<p>MATIC Quantity <span><em>{polygonAmount}</em>MATIC</span></p>
 								</li>
 								<li>
-									<p>TVP Quantity <span><em>{tvpAmount}</em>TVP</span></p>
+									<p>DDP Quantity <span><em>{tvpAmount}</em>DDP</span></p>
 								</li>
 								<li>
 									<div className="btnArea">
@@ -1230,17 +1230,17 @@ const ProfileContainer = () => {
 				<p className="subTit">Token Quantity</p>
 				<div className="inputArea">
 				<input id='fromTokenAmt' type="text" placeholder="Enter Quantity" onChange={calToeknval} onInput={numberChk}/>
-				<span id='fromToken'>TVP</span>
+				<span id='fromToken'>DDP</span>
 				</div>
 			</li>
 			<li>
 				<span className="frame" style={{ cursor: 'pointer' }} onClick={chgSwapToken}><img src={exchg} alt=""/></span>
 			</li>
 			<li>
-				<p className="subTit" id='toTokenQnt'>TVS Quantity</p>
+				<p className="subTit" id='toTokenQnt'>DDP Quantity</p>
 				<div className="inputArea">
 					<input id='toTokenAmt' type="text" readOnly/>
-				<span id='toToken'>TVS</span>
+				<span id='toToken'>DDP</span>
 				</div>
 			</li>
 			</ul>

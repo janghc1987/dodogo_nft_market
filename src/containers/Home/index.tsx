@@ -68,7 +68,7 @@ const HomeContainer = () => {
           <div className="contInner">
             <div className="contBox">
               <div className="box1">
-                <p>How to enjoy with TVS.LAND</p>
+                <p>How to enjoy with DODOGO</p>
               </div>
               <div className="box2">
                 <ul>
@@ -78,20 +78,20 @@ const HomeContainer = () => {
                     <div className="txtbox">
                       <p>Once you’ve connected</p>
                       <p>your Metamask wallet</p>
-                      <p>to TVS.LAND, you are</p>
+                      <p>to DODOGO, you are</p>
                       <p>ready to buy NFTs.</p>
                       <p> &nbsp; </p>
                     </div>
                   </li>
                   <li>
                     <span className="frame"><img src={ftimg2} alt=""/></span>
-                    <p>Exchange to TVP</p>
+                    <p>Exchange to DDP</p>
                     <div className="txtbox">
                       <p>In order to trade NFT,</p>
-                      <p>you need TVP.</p>
-                      <p>You can get TVP by</p>
+                      <p>you need DDP.</p>
+                      <p>You can get DDP by</p>
                       <p>exchanging from ETH</p>
-                      <p>or TVS.</p>
+                      <p>or DDS.</p>
                     </div>
                   </li>
                   <li>
@@ -99,9 +99,9 @@ const HomeContainer = () => {
                     <p>How to Buy & Sell</p>
                     <div className="txtbox">
                       <p>Buy or bid for your favorite</p>
-                      <p>NFTs with TVP only.</p>
+                      <p>NFTs with DDP only.</p>
                       <p>Sell your NFTs</p>
-                      <p>curated by TVS.LAND.</p>
+                      <p>curated by DODOGO.</p>
                       <p> &nbsp; </p>
                     </div>
                   </li>
