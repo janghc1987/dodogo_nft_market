@@ -10,7 +10,7 @@ import auctionSortAtom from '../../../atoms/auctionSort';
 const sorts = ['ASC', 'DESC', 'NEW', 'END', 'HOT'];
 const categories = [
   'All',
-  'Diamond',
+  'Photo',
   'Artwork',
   'Digital Art'
 ];

@@ -4,7 +4,7 @@ import { getMainWidth, handleTitle } from '../../utils';
 import './CreateItem.css';
 import mnu2 from '../../assets/img/mnu2.png';
 import mnu3 from '../../assets/img/mnu3.png';
-import mnu4 from '../../assets/img/mnu4.png';
+import mnu4 from '../../assets/img/photo.png';
 import mnu5 from '../../assets/img/mnu5.png';
 import mnu6 from '../../assets/img/mnu6.png';
 import mnu7 from '../../assets/img/mnu7.png';
@@ -474,7 +474,7 @@ const CreateItemContainer = () => {
 						<div className="selectArea">
 							<ul className="clearfix">
 								<li id='LiRef1' onClick={categoryFn}><a href="#none" ><span className="frame"><img
-											src={mnu4} alt=""/></span> Diamond</a></li>
+											src={mnu4} alt=""/></span> Photo</a></li>
 								<li id='LiRef2' onClick={categoryFn}><a href="#none"><span className="frame"><img
 											src={mnu2} alt=""/></span> Artwork</a></li>
 								<li id='LiRef3' onClick={categoryFn}><a href="#none" ><span className="frame"><img

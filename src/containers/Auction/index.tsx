@@ -44,7 +44,7 @@ const AuctionContainer = () => {
       let chkVal = $("#"+targetId).val();
       $(".sortchkList").append("<span gubun='"+chkVal+"'><em className='sortchkTxt'>"+chkVal+"</em><a href='#'><i className='fas fa-times'></i></a></span>");
       
-      if(chkVal === 'Diamond'){
+      if(chkVal === 'Photo'){
         setAuctionCategory(1);
       }else if(chkVal === 'Artwork'){
         setAuctionCategory(2);
@@ -165,7 +165,7 @@ const AuctionContainer = () => {
       let chkVal = '';
 
       if(auctionCategory === 1){
-        chkVal = 'Diamond';
+        chkVal = 'Photo';
       }else if(auctionCategory === 2){
         chkVal = 'Artwork';
       }else if(auctionCategory === 3){
@@ -370,7 +370,7 @@ const AuctionContainer = () => {
               <a href="#none" className="sortmnuBtn off" onClick={clickCategory}>Category<i className="fas fa-chevron-right"></i></a>
               <div className="subsortMnu">
                 <ol>
-                  <li><p>Diamond</p><input className="sortChkFn" id="sortChk2" type="checkbox" value="Diamond" onClick={selectCategory}/><label htmlFor="sortChk2"><i className="fas fa-check"></i></label></li>
+                  <li><p>Photo</p><input className="sortChkFn" id="sortChk2" type="checkbox" value="Photo" onClick={selectCategory}/><label htmlFor="sortChk2"><i className="fas fa-check"></i></label></li>
                   <li><p>Artwork</p><input className="sortChkFn" id="sortChk3" type="checkbox" value="Artwork"onClick={selectCategory}/><label htmlFor="sortChk3"><i className="fas fa-check"></i></label></li>
                   <li><p>Digital Art</p><input className="sortChkFn"  id="sortChk4" type="checkbox" value="Digital Art" onClick={selectCategory}/><label htmlFor="sortChk4"><i className="fas fa-check"></i></label></li>
                 </ol>

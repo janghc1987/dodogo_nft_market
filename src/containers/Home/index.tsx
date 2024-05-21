@@ -12,8 +12,8 @@ import '../../assets/css/common.css';
 import '../../assets/css/reset.css';
 import '../../assets/css/style.css';
 
-import diaOn from '../../assets/img/diaOn.png';
-import diaOff from '../../assets/img/diaOff.png';
+import diaOn from '../../assets/img/cameraOn.png';
+import diaOff from '../../assets/img/cameraOff.png';
 import puzzleOn from '../../assets/img/puzzleOn.png';
 import puzzleOff from '../../assets/img/puzzleOff.png';
 import bcOn from '../../assets/img/bcOn.png';
@@ -130,7 +130,7 @@ const HomeContainer = () => {
                     <a href="#none" onClick={()=> {goAuction(1);window.scrollTo(0, 0);}}>
                       <span className="frame type1"><img src={diaOn} alt=""/></span>
                       <span className="frame type2"><img src={diaOff} alt=""/></span>
-                      <span className="txt">Diamond</span>
+                      <span className="txt">Photo</span>
                     </a>
                   </li>
                   <li>
